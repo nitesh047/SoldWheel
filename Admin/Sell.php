@@ -1,3 +1,18 @@
+<?php
+
+session_start();
+include ('db.php');
+$s = " select * from sellcar";
+$result = mysqli_query($con,$s);
+$num = mysqli_num_rows($result);
+// $row = mysqli_fetch_array($result);
+// echo $row['carName'];
+ 
+// echo $num;
+
+//  echo gettype($row);
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,20 +47,23 @@
   </button>
 </div></center>
    </div>
+
    <div class="container">
+   <?php
+             while($row = mysqli_fetch_array($result)){?>
        <div class="container">
            <div class="row">
             <div class="col-md-6">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6" style="margin:auto">
-                        <img src="../dist/images/car1.png" style="height:110px; width:100%; object-fit:cover" alt="car photo">
+                        <img src=<?php echo $row['image'] ?> style="height:120px; width:100%; object-fit:cover" alt="car photo">
                         </div>
                         <div class="col-md-6">
-                        <h6>Used 2019 Audi S4 Premium Plus </h6>  
+                        <h6><?php echo $row['carName'] ?></h6>  
                         <p>11,475 Miles </p>
-                        <p>Blue, 23City/27 Highway , AWD , 4 Cylinder Turbo </p>
-                        <h6>$41,400</h6> 
+                        <p><?php echo $row['location'] ?> </p>
+                        <h6><?php echo $row['carPrice'] ?></h6> 
                         </div>
                     </div>
                 </div>
@@ -56,101 +74,32 @@
             </div>
            </div>
        </div><hr>
-       <div class="container">
-           <div class="row">
-            <div class="col-md-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6" style="margin:auto">
-                        <img src="../dist/images/jeep.png" style="height:110px; width:100%; object-fit:cover" alt="car photo">
-                        </div>
-                        <div class="col-md-6">
-                        <h6>Used 2019 Audi S4 Premium Plus </h6>  
-                        <p>11,475 Miles </p>
-                        <p>Blue, 23City/27 Highway , AWD , 4 Cylinder Turbo </p>
-                        <h6>$41,400</h6> 
-                        </div>
-                    </div>
-                </div>
-           
-            </div>
-            <div class="col-md-6">
-             <button style="background:blueviolet; border-radius:5px; float:right;margin-right:70px"><span><i style="color:white" class="bi bi-bookmark-star-fill"></i></span></button>
-            </div>
-           </div>
-       </div><hr>
-       <div class="container">
-           <div class="row">
-            <div class="col-md-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6" style="margin:auto">
-                        <img src="../dist/images/car2.png" style="height:110px; width:100%; object-fit:cover" alt="car photo">
-                        </div>
-                        <div class="col-md-6">
-                        <h6>Used 2019 Audi S4 Premium Plus </h6>  
-                        <p>11,475 Miles </p>
-                        <p>Blue, 23City/27 Highway , AWD , 4 Cylinder Turbo </p>
-                        <h6>$41,400</h6> 
-                        </div>
-                    </div>
-                </div>
-           
-            </div>
-            <div class="col-md-6">
-             <button style="background:blueviolet; border-radius:5px; float:right;margin-right:70px"><span><i style="color:white" class="bi bi-bookmark-star-fill"></i></span></button>
-            </div>
-           </div>
-       </div><hr>
-       <div class="container">
-           <div class="row">
-            <div class="col-md-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6" style="margin:auto">
-                        <img src="../dist/images/car3.png" style="height:110px; width:100%; object-fit:cover" alt="car photo">
-                        </div>
-                        <div class="col-md-6">
-                        <h6>Used 2019 Audi S4 Premium Plus </h6>  
-                        <p>11,475 Miles </p>
-                        <p>Blue, 23City/27 Highway , AWD , 4 Cylinder Turbo </p>
-                        <h6>$41,400</h6> 
-                        </div>
-                    </div>
-                </div>
-           
-            </div>
-            <div class="col-md-6">
-             <button style="background:blueviolet; border-radius:5px; float:right;margin-right:70px"><span><i style="color:white" class="bi bi-bookmark-star-fill"></i></span></button>
-            </div>
-           </div>
-       </div><hr>
-       <div class="container">
-           <div class="row">
-            <div class="col-md-6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6" style="margin:auto">
-                        <img src="../dist/images/car4.png" style="height:110px; width:100%; object-fit:cover" alt="car photo">
-                        </div>
-                        <div class="col-md-6">
-                        <h6>Used 2019 Audi S4 Premium Plus </h6>  
-                        <p>11,475 Miles </p>
-                        <p>Blue, 23City/27 Highway , AWD , 4 Cylinder Turbo </p>
-                        <h6>$41,400</h6> 
-                        </div>
-                    </div>
-                </div>
-           
-            </div>
-            <div class="col-md-6">
-             <button style="background:blueviolet; border-radius:5px; float:right;margin-right:70px"><span><i style="color:white" class="bi bi-bookmark-star-fill"></i></span></button>
-            </div>
-           </div>
-       </div><hr>
-   </div>
+       <?php 
+       }
+       ?>
+
+</div>
+
 </body>
 <script>
        document.getElementById('sellButton').style.backgroundColor='#08a5e0';
+
    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-analytics.js"></script> --> 
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js"></script> -->
+  
+        <script src="firebase.js"></script>
+        <script>
+            const auth = firebase.auth(); 
+            auth.onAuthStateChanged(user=>{
+                if (user) {
+                  console.log("user found");
+                } else {
+                  location.replace('Login.php');
+                }
+})
+        </script>
+        <script src="index.js"></script>
 </html>

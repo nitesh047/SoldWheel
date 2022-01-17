@@ -53,7 +53,23 @@
     
 </div>
  
-
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-analytics.js"></script> --> 
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js"></script> -->
+  
+        <script src="firebase.js"></script>
+        <script>
+            const auth = firebase.auth(); 
+            auth.onAuthStateChanged(user=>{
+                if (user) {
+                  console.log("user found");
+                } else {
+                  location.replace('Login.php');
+                }
+})
+        </script>
+        <script src="index.js"></script>
 
    </body>
 </html>

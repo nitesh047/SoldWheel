@@ -20,6 +20,15 @@ $num = mysqli_num_rows($result);
     
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4DDBKNPWJ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4DDBKNPWJ9');
+</script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -2600,6 +2609,7 @@ $num = mysqli_num_rows($result);
         <script src="dist/js/common.js"></script>
         <script src="firebase.js"></script>
         <script src="index.js"></script>
+       
     </body>
 
 </html>

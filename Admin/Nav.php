@@ -32,6 +32,7 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 
     <a class="nav-link pl-0 side" href="Rent.php" style="color: blanchedalmond; font-size: 14px; margin-top: 15px;" id="rentButton">       Rent</a>
     <a class="nav-link pl-0 side" href="Driver.php" style="color: blanchedalmond; font-size: 14px; margin-top: 15px;" id="driverButton">        Driver</a>
+    <a class="nav-link pl-0 side" onclick="logout()" style="color: blanchedalmond; font-size: 14px; margin-top: 15px;" id="driverButton">        Logout</a>
  
 </div>
 <div class="w3-main" style="margin-left:200px">

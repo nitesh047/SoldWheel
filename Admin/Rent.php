@@ -1,3 +1,20 @@
+<?php
+
+session_start();
+include ('db.php');
+$s = " select * from rentcar";
+$result = mysqli_query($con,$s);
+$num = mysqli_num_rows($result);
+// $row = mysqli_fetch_array($result);
+// echo $row['carName'];
+ 
+// echo $num;
+
+//  echo gettype($row);
+
+?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,119 +59,65 @@
   </button>
 </div></center>
    </div>
-   
+
    <section class="bg-light">
             <div class="container">
                 <div class="row">
                      
                 </div>
                 <div class="slider multiple-items2">
+                <?php
+             while($row = mysqli_fetch_array($result)){?>
                    
                     <div>
-                        <a href="#"><img src="../dist/images/img6.jpg" alt="" class="img-fluid rounded-top" /></a>
+                        <a href="#"><img src=<?php echo $row['images'] ?> style="width: 100%; height: 18vw; object-fit: cover;" alt="" class="img-fluid rounded-top" /></a>
                         <div class="card c-brd-light car-box">
                             <div class="card-body">
-                                <h6 class="mb-2">Chevrolet camaro SS</h6>
+                                <h6 class="mb-2"><?php echo $row['carName'] ?></h6>
                                 <ul class="list-unstyled mb-0 c-line-height-2_5">
-                                    <li><h6 class="c-primary mb-0"><small class="c-light">Price</small> ₹35 </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Owner Name: </small> John Deo </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Sitting Capacity: </small> 4 </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Fuel Type: </small> CNG </h6></li>
+                                    <li><h6 class="c-primary mb-0"><small class="c-light">Price</small> ₹<?php echo $row['rentPrice'] ?> </h6></li>
+                                   <li><h6 class="c-primary mb-0"><small class="c-light">Owner Name: </small> <?php echo $row['ownerName'] ?> </h6></li>
+                                   <li><h6 class="c-primary mb-0"><small class="c-light">Sitting Capacity: </small> <?php echo $row['capacity'] ?> </h6></li>
+                                   <li><h6 class="c-primary mb-0"><small class="c-light">Fuel Type: </small> <?php echo $row['fuelType'] ?> </h6></li>
                                 </ul>
                             </div>
                              <ul class="list-inline mb-0 p-3 c-brd-light" style="margin:auto">
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-primary"><span><i class="bi bi-telephone-forward-fill"></i></span>  Call Now </a></li>
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-success"><span><i class="bi bi-whatsapp"></i></span>   Whatsapp Now</a></li>
+                                <li class="list-inline-item mr-3"><a href="tel:+91<?php echo $row['contact'] ?>" class="c-light btn btn-primary"><span><i class="bi bi-telephone-forward-fill"></i></span>  Call Now </a></li>
+                                <li class="list-inline-item mr-3"><a href="https://api.whatsapp.com/send?phone=<?php echo $row['whatsapp'] ?>" class="c-light btn btn-success"><span><i class="bi bi-whatsapp"></i></span>   Whatsapp Now</a></li>
                                 <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-danger"><span><i class="bi bi-pen"></i></span>   Edit</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div>
-                        <a href="#"><img src="../dist/images/img7.jpg" alt="" class="img-fluid rounded-top" /></a>
-                        <div class="card c-brd-light car-box">
-                            <div class="card-body">
-                                <h6 class="mb-2">Land Rover Discovery XXV</h6>
-                                <ul class="list-unstyled mb-0 c-line-height-2_5">
-                                    <li><h6 class="c-primary mb-0"><small class="c-light">Price</small> ₹41</h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Owner Name: </small> John Deo </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Sitting Capacity: </small> 4 </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Fuel Type: </small> CNG </h6></li>
-                                </ul>
-                            </div>
-                            <ul class="list-inline mb-0 p-3 c-brd-light" style="margin:auto">
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-primary"><span><i class="bi bi-telephone-forward-fill"></i></span>  Call Now </a></li>
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-success"><span><i class="bi bi-whatsapp"></i></span>   Whatsapp Now</a></li>
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-danger"><span><i class="bi bi-pen"></i></span>   Edit</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#"><img src="../dist/images/img5.jpg" alt="" class="img-fluid rounded-top" /></a>
-                        <div class="card c-brd-light car-box">
-                            <div class="card-body">
-                                <h6 class="mb-2">Aston Martin DB5</h6>
-                                <ul class="list-unstyled mb-0 c-line-height-2_5">
-                                    <li><h6 class="c-primary mb-0"><small class="c-light">Price</small> ₹28 </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Owner Name: </small> John Deo </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Sitting Capacity: </small> 4 </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Fuel Type: </small> CNG </h6></li>
-                                </ul>
-                            </div>
-                             <ul class="list-inline mb-0 p-3 c-brd-light" style="margin:auto">
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-primary"><span><i class="bi bi-telephone-forward-fill"></i></span>  Call Now </a></li>
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-success"><span><i class="bi bi-whatsapp"></i></span>   Whatsapp Now</a></li>
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-danger"><span><i class="bi bi-pen"></i></span>   Edit</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#"><img src="../dist/images/img6.jpg" alt="" class="img-fluid rounded-top" /></a>
-                        <div class="card c-brd-light car-box">
-                            <div class="card-body">
-                                <h6 class="mb-2">Chevrolet camaro SS</h6>
-                                <ul class="list-unstyled mb-0 c-line-height-2_5">
-                                    <li><h6 class="c-primary mb-0"><small class="c-light">Price</small> ₹35 </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Owner Name: </small> John Deo </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Sitting Capacity: </small> 4 </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Fuel Type: </small> CNG </h6></li>
-                                </ul>
-                            </div>
-                             <ul class="list-inline mb-0 p-3 c-brd-light" style="margin:auto">
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-primary"><span><i class="bi bi-telephone-forward-fill"></i></span>  Call Now </a></li>
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-success"><span><i class="bi bi-whatsapp"></i></span>   Whatsapp Now</a></li>
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-danger"><span><i class="bi bi-pen"></i></span>   Edit</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="#"><img src="../dist/images/img7.jpg" alt="" class="img-fluid rounded-top" /></a>
-                        <div class="card c-brd-light car-box">
-                            <div class="card-body">
-                                <h6 class="mb-2">Land Rover Discovery XXV</h6>
-                                <ul class="list-unstyled mb-0 c-line-height-2_5">
-                                    <li><h6 class="c-primary mb-0"><small class="c-light">Price</small> ₹41  </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Owner Name: </small> John Deo </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Sitting Capacity: </small> 4 </h6></li>
-                                   <li><h6 class="c-primary mb-0"><small class="c-light">Fuel Type: </small> CNG </h6></li>
-                                </ul>
-                            </div>
-                             <ul class="list-inline mb-0 p-3 c-brd-light" style="margin:auto">
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-primary"><span><i class="bi bi-telephone-forward-fill"></i></span>  Call Now </a></li>
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-success"><span><i class="bi bi-whatsapp"></i></span>   Whatsapp Now</a></li>
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-danger"><span><i class="bi bi-pen"></i></span>   Edit</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <?php }
+                    ?>
+</div>
+</div>
 
+
+    
    
    <script>
        document.getElementById('rentButton').style.backgroundColor=' #08a5e0';
    </script>
        <script src="../dist/js/plugins.min.js"></script>
         <script src="../dist/js/common.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-analytics.js"></script> --> 
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js"></script> -->
+  
+        <script src="firebase.js"></script>
+        <script>
+            const auth = firebase.auth(); 
+            auth.onAuthStateChanged(user=>{
+                if (user) {
+                  console.log("user found");
+                } else {
+                  location.replace('Login.php');
+                }
+})
+        </script>
+        <script src="index.js"></script>
 </body>
 
 </html>
