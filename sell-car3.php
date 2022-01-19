@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Sell Car-SoldWheel</title>  
+        <title>sell-car SoldWheel</title>  
         
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="favicon.ico">
@@ -17,73 +17,9 @@
         <link href="dist/css/main.min.css" rel="stylesheet">
     </head>
     <body> 
-  <!-- Header-->
-  <header id="header-fix" class="main-header">
-    <div class="top-bar py-lg-0 py-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 text-center text-md-left align-self-center">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="mailto:helpteam@soldwheel.com"><i class="fa fa-envelope pr-1"></i> team@soldwheel.com </a></li>
-                        <li class="list-inline-item"><a href="tel:+91 99707 40063"><i class="fa fa-phone pr-1"></i>+91 99707 40063</a></li>
-                    </ul> 
-                </div> 
-                <div class="col-12 col-md-6 text-center text-md-right">
-                    <div class="top-right">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item"><i class="fa fa-user pr-1"></i> <a href="#signup" class="c-primary login_form"> Login </a> Or <a href="#signup" class="register_form c-primary"> Register </a></li>
-                            <li class="list-inline-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-language pr-1"></i> ENG </a>
-                                <div class="dropdown-menu rounded-0 border-0 py-0">
-                                    <a class="dropdown-item" href="#">English</a>
-                                    <a class="dropdown-item" href="#">Hindi</a>
-                                    <a class="dropdown-item" href="#">Marathi</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-3 px-0">
-            <a class="navbar-brand" href="index.html"><img src="dist/images/SoldWheel Logo.png" alt="" class="img-fluid" /></a>
-            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto mr-lg-4 mt-4 mt-lg-0">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"  aria-expanded="false">Company</a>
-                    <ul class="dropdown-menu rounded-0 border-0 py-0">
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="coming-soon.html">Coming Soon</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="grid-without-sidebar.html">Cars List</a></li>
-                <li class="nav-item"><a class="nav-link" href="carRent.html">Car Rent</a></li>
-                <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog</a></li>       
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                    <a href="sell-car.html" class="btn btn-primary my-2 my-sm-0 btn-sm">Sell Car</a>
-                    <div class="form-group position-relative mb-0">
-                        <input class="form-control ml-sm-2 rounded-0" type="search" placeholder="Search">
-                        <div class="search position-absolute">
-                            <a href="#"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-              </form>
-            </div>
-        </nav>
-    </div>
-</header>
-<!-- End Header-->
+         <!-- Header-->
+         <?php include 'header.php' ?>
+        <!-- End Header-->
         
         <!-- Page Inner-->
         <section>
@@ -172,190 +108,32 @@
                         <div class="card c-brd-light condition">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="c-dark">Make Year</label>
+                                    <div class="col-12 col-sm-4">
+                                        <label class="c-dark">Cover Photo</label>
                                         <div class="form-group">
-                                            <select class="form-control rounded">
-                                                <option>--- Select an Year ---</option>
-                                                <option value="2016">2016 </option>
-                                                <option value="2015">2015 </option>
-                                                <option value="2014">2014 </option>
-                                                <option value="2013">2013 </option>
-                                                <option value="2012">2012 </option>
-                                                <option value="2011">2011 </option>
-                                            </select>
-                                        </div>
-                                    </div>  
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="c-dark">Make Month</label>
-                                        <div class="form-group">
-                                            <select class="form-control rounded">
-                                                <option>--- Select an Month ---</option>
-                                                <option value="january">January </option>
-                                                <option value="fabuary">Fabuary </option>
-                                                <option value="march">March </option>
-                                                <option value="april">April </option>
-                                                <option value="may">May </option>
-                                                <option value="june">June </option>
-                                                <option value="july">July </option>
-                                                <option value="august">August </option>
-                                                <option value="september">September </option>
-                                                <option value="octomber">Octomber </option>
-                                                <option value="november">November </option>
-                                                <option value="december">December </option>
-                                            </select>
-                                        </div>
-                                    </div>  
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="c-dark">Brand</label>
-                                        <div class="form-group">
-                                            <select class="form-control rounded">
-                                                <option>--- Select an Brand ---</option>
-                                                <option value="Ford">Ford </option>
-                                                <option value="Volvo">Volvo</option>
-                                                <option value="BMW">BMW</option>
-                                                <option value="Aston">Aston</option>
-                                                <option value="Chevrolet">Chevrolet</option>
-                                                <option value="Honda">Honda City i VTEC SV</option>
-                                                <option value="Volkswagen">Volkswagen</option>
-                                                <option value="Tata">Tata</option>.
-                                                <option value="Skoda">Skoda</option>
-                                                <option value="Audi">Audi</option>
-                                                <option value="Ranault">Ranault</option>
-                                                <option value="Nissan">Nissan</option>
-                                                <option value="Mahindra">Mahindra</option>
-                                                <option value="Toyota">Toyota</option>
-                                                <option value="Maruti">Maruti</option>
-                                                <option value="Hyundai">Hyundai</option>
-                                            </select>
-                                        </div>
-                                    </div>  
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="c-dark">Model</label>
-                                        <div class="form-group">
-                                            <select class="form-control rounded">
-                                                <option>--- Select an Model ---</option>
-                                                <option value="Ford Mustang">Mustang </option>
-                                                <option value="Volvo XC90 Inscription">Volvo XC90 Inscription</option>
-                                                <option value="BMW X6 M">BMW X6 M</option>
-                                                <option value="Aston Martin DB5">Aston Martin DB5</option>
-                                                <option value="Chevrolet Camaro">Chevrolet Camaro</option>
-                                                <option value="Honda City i VTEC SV">Honda City i VTEC SV</option>
-                                                <option value="Volkswagen Jetta">Volkswagen Jetta</option>
-                                                <option value="Tata Aria Pure 4x2">Tata Aria Pure 4x2</option>.
-                                                <option value="Skoda Octavia Ambition 1.4 TSI MT">Skoda Octavia Ambition 1.4 TSI MT</option>
-                                                <option value="Audi A4 35 TDI Premium">Audi A4 35 TDI Premium</option>
-                                                <option value="Renault Fluence E4 D">Renault Fluence E4 D</option>
-                                                <option value="Nissan Micra AT">Nissan Micra AT</option>
-                                                <option value="Mahindra Scorpio S10 AT 2WD">Mahindra Scorpio S10 AT 2WD</option>
-                                                <option value="Toyota Etios G">Toyota Etios G</option>
-                                                <option value="Maruti Swift ZXI">Maruti Swift ZXI</option>
-                                                <option value="Hyundai I20">Hyundai I20</option>
-                                            </select>
-                                        </div>
-                                    </div>  
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="c-dark">Variant</label>
-                                        <div class="form-group">
-                                            <select class="form-control rounded">
-                                                <option>--- Select an Variant ---</option>
-                                                <option value="Sedan">Sedan</option>
-                                                <option value="Hatchback">Hatchback</option>
-                                                <option value="SUV">SUV</option>
-                                                <option value="Minivan">Minivan</option>
-                                                <option value="Pickup">Pickup</option>
-                                                <option value="Coupe Car">Coupe Car</option>
-                                                <option value="Convertible">Convertible</option>
-                                            </select>
-                                        </div>
-                                    </div>  
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="c-dark">Color</label>
-                                        <div class="form-group">
-                                            <select class="form-control rounded">
-                                                <option>--- Select an Color ---</option>
-                                                <option value="Gray">Gray</option>
-                                                <option value="White">White</option>
-                                                <option value="Blue">Blue</option>
-                                                <option value="Green">Green</option>
-                                                <option value="Black">Black</option>
-                                                <option value="Pink">Pink</option>
-                                                <option value="Red">Red</option>
-                                                <option value="Yellow">Yellow</option>
-                                                <option value="More Colors">More Colors</option>
-                                            </select>
+                                            <input type="file" class="choose form-control" />
                                         </div>
                                     </div> 
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="c-dark">Alternate Fuel</label>
-                                        <div class="form-group">
-                                            <select class="form-control rounded">
-                                                <option>--- Select One ---</option>
-                                                <option value="Petrol">Petrol</option>
-                                                <option value="Diesal">Diesal</option>
-                                                <option value="CNG">CNG</option>
-                                                <option value="Electric">Electric</option>
-                                            </select>
-                                        </div>
-                                    </div>  
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="c-dark">Kilometers Driven</label>
-                                        <div class="form-group">
-                                            <select class="form-control rounded">
-                                                <option value="50,000 km">50,000 km</option>
-                                                <option value="20,000 km">20,000 km</option>
-                                                <option value="15,000 km">15,000 km</option>
-                                                <option value="60,000 km">60,000 km</option>
-                                                <option value="70,000 km">70,000 km</option>
-                                                <option value="30,000 km">30,000 km</option>
-                                                <option value="80,000 km">80,000 km</option>
-                                                <option value="90,000 km">90,000 km</option>
-                                                <option value="100,000 km">100,000 km</option>
-                                            </select>
-                                        </div>
-                                    </div>  
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="c-dark">Owner</label>
-                                        <div class="form-group">
-                                            <select class="form-control rounded">
-                                                <option>--- Select One ---</option>
-                                                <option value="first owner">First Owner</option>
-                                                <option value="second owner">Second Owner</option>
-                                                <option value="third owner">Third Owner</option>
-                                            </select>
+                                    <div class="col-12 col-sm-12">
+                                        <label class="c-dark">Gallery</label>
+                                        <div class="form-group text-center">
+                                            <form action="http://html.designstream.co.in/file-upload" class="dropzone dz-clickable" id="my-awesome-dropzone">
+                                                <div class="d-table w-100 h-100 ">
+                                                    <div class="d-table-cell align-middle">
+                                                        <div class="dz-default dz-message">
+                                                            <h5 class="mb-2 c-light"><i class="fa fa-plus"></i></h5>
+                                                            <span> Add Photo</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div> 
-                                    <div class="col-12 col-sm-6 col-lg-4">
-                                        <label class="c-dark">Price Expectation</label>
-                                        <div class="form-group position-relative">
-                                            <select class="form-control rounded pl-4">
-                                                <option value="12,50,000">e.g. 12,50,000</option>
-                                                <option value="11,00,000">e.g. 11,00,000</option>
-                                                <option value="10,00,000">e.g. 10,00,000</option>
-                                                <option value="9,50,000">e.g. 9,00,000</option>
-                                                <option value="7,00,000">e.g. 7,00,000</option>
-                                                <option value="5,00,000">e.g. 5,00,000</option>
-                                            </select>
-                                            <small>Twelve Lakh Fifty Thousand Rupes Only</small>
-                                            <div class="price position-absolute c-dark"><i class="fa fa-usd"></i></div>
-                                        </div>
+                                    <div class="col-12 col-sm-4 col-lg-2 mr-auto mt-3 mt-sm-0">
+                                        <a href="sell-car2.html" class="btn btn-secondary btn-md btn-block text-uppercase">Back</a>  
                                     </div>
-                                    <div class="col-12 col-lg-8">
-                                        <div class='row'>
-                                            <div class='col-12 col-lg-3 col-xl-2 align-self-end'>
-                                                <span class="good"><i class="fa fa-usd"></i> 1.25 Lakh <br /> Good Condition</span>
-                                            </div>
-                                            <div class='col-12 col-lg-6 col-xl-7  mb-3 mb-lg-0'>
-                                                <img src="dist/images/condition.png" alt="" class="img-fluid" />
-                                            </div>
-                                            <div class='col-12 col-lg-3 col-xl-3 align-self-end'>
-                                                <span class="superb"><i class="fa fa-usd"></i> 13.50 Lakh <br /> Superb Condition</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-lg-4"></div>
                                     <div class="col-12 col-sm-4 col-lg-2 ml-auto mt-3 mt-sm-0">
-                                        <a href="sell-car2.html" class="btn btn-primary btn-md btn-block text-uppercase">Next</a>  
+                                        <a href="#" class="btn btn-primary btn-md btn-block text-uppercase">Public Listing</a>  
                                     </div>
                                 </div>
                             </div>
@@ -395,9 +173,8 @@
         </section>
         <!-- End Subscribe-->
         
-        
-        <!-- Footer Top -->
-        <section class="footer c-bg-dark">
+          <!-- Footer Top -->
+          <section class="footer c-bg-dark">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-3 mb-4 mb-lg-0">
@@ -572,6 +349,7 @@
         
         <!-- jQuery -->
         <script src="dist/js/plugins.min.js"></script>
+        <script src="dist/js/dropzone.js"></script>
         <script src="dist/js/common.js"></script>
     </body>
 

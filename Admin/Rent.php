@@ -30,11 +30,13 @@ $num = mysqli_num_rows($result);
 <!--Plugin CSS-->
         <!-- <link href="../dist/css/plugins.min.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
 
         <!--main Css-->
         <link href="../dist/css/main.min.css" rel="stylesheet">
         <!-- <link href="../stylee.css" rel="stylesheet"> -->
         <!-- Favicon -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
         <link rel="icon" type="image/png" href="favicon.ico">
 
         <!--Plugin CSS-->
@@ -84,7 +86,7 @@ $num = mysqli_num_rows($result);
                              <ul class="list-inline mb-0 p-3 c-brd-light" style="margin:auto">
                                 <li class="list-inline-item mr-3"><a href="tel:+91<?php echo $row['contact'] ?>" class="c-light btn btn-primary"><span><i class="bi bi-telephone-forward-fill"></i></span>  Call Now </a></li>
                                 <li class="list-inline-item mr-3"><a href="https://api.whatsapp.com/send?phone=<?php echo $row['whatsapp'] ?>" class="c-light btn btn-success"><span><i class="bi bi-whatsapp"></i></span>   Whatsapp Now</a></li>
-                                <li class="list-inline-item mr-3"><a href="#" class="c-light btn btn-danger"><span><i class="bi bi-pen"></i></span>   Edit</a></li>
+                                <li class="list-inline-item mr-3"><a data-id='<?php echo $row['id']; ?>' class=" userinfo c-light btn btn-danger"><span><i class="bi bi-pen"></i></span>   Edit</a></li>
                             </ul>
                         </div>
                     </div>
@@ -93,12 +95,34 @@ $num = mysqli_num_rows($result);
 </div>
 </div>
 
+<!-- Button trigger modal -->
+<div class="modal fade bd-example-modal-lg" id="empModal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
 
-    
+        </div>
+    </div>
+</div>
    
    <script>
        document.getElementById('rentButton').style.backgroundColor=' #08a5e0';
    </script>
+    <script type='text/javascript'>
+            $(document).ready(function(){
+                $('.userinfo').click(function(){
+                    var userid = $(this).data('id');
+                    $.ajax({
+                        url: 'carDetails.php',
+                        type: 'post',
+                        data: {userid: userid},
+                        success: function(response){ 
+                            $('.modal-content').html(response); 
+                            $('#empModal').modal('show'); 
+                        }
+                    });
+                });
+            });
+            </script>
        <script src="../dist/js/plugins.min.js"></script>
         <script src="../dist/js/common.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     
-
+<!-- Mirrored from html.designstream.co.in/carspot/error-404.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Sep 2021 10:53:36 GMT -->
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact Us- SoldWheel</title>  
+        <title>Car Spot</title>  
         
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="favicon.ico">
@@ -18,73 +18,9 @@
         <link href="dist/css/main.min.css" rel="stylesheet">
     </head>
     <body> 
-  <!-- Header-->
-  <header id="header-fix" class="main-header">
-    <div class="top-bar py-lg-0 py-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 text-center text-md-left align-self-center">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="mailto:helpteam@soldwheel.com"><i class="fa fa-envelope pr-1"></i> team@soldwheel.com </a></li>
-                        <li class="list-inline-item"><a href="tel:+91 99707 40063"><i class="fa fa-phone pr-1"></i>+91 99707 40063</a></li>
-                    </ul> 
-                </div> 
-                <div class="col-12 col-md-6 text-center text-md-right">
-                    <div class="top-right">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item"><i class="fa fa-user pr-1"></i> <a href="#signup" class="c-primary login_form"> Login </a> Or <a href="#signup" class="register_form c-primary"> Register </a></li>
-                            <li class="list-inline-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-language pr-1"></i> ENG </a>
-                                <div class="dropdown-menu rounded-0 border-0 py-0">
-                                    <a class="dropdown-item" href="#">English</a>
-                                    <a class="dropdown-item" href="#">Hindi</a>
-                                    <a class="dropdown-item" href="#">Marathi</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-3 px-0">
-            <a class="navbar-brand" href="index.html"><img src="dist/images/SoldWheel Logo.png" alt="" class="img-fluid" /></a>
-            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto mr-lg-4 mt-4 mt-lg-0">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"  aria-expanded="false">Company</a>
-                    <ul class="dropdown-menu rounded-0 border-0 py-0">
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="coming-soon.html">Coming Soon</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="grid-without-sidebar.html">Cars List</a></li>
-                <li class="nav-item"><a class="nav-link" href="carRent.html">Car Rent</a></li>
-                <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog</a></li>       
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                    <a href="sell-car.html" class="btn btn-primary my-2 my-sm-0 btn-sm">Sell Car</a>
-                    <div class="form-group position-relative mb-0">
-                        <input class="form-control ml-sm-2 rounded-0" type="search" placeholder="Search">
-                        <div class="search position-absolute">
-                            <a href="#"><i class="fa fa-search"></i></a>
-                        </div>
-                    </div>
-              </form>
-            </div>
-        </nav>
-    </div>
-</header>
-<!-- End Header-->
+        <!-- Header-->
+        <?php include 'header.php' ?>
+        <!-- End Header-->
         
         <!-- Page Inner-->
         <section>
@@ -96,7 +32,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 justify-content-center text-center">
-                        <h1 class="text-white c-font-weight-700">Contact Us</h1>
+                        <h1 class="text-white c-font-weight-700">Error 404</h1>
                     </div>
                 </div>
             </div>
@@ -110,7 +46,7 @@
                     <div class="col-10 col-sm-5 col-lg-3 text-center">
                         <ol class="breadcrumb justify-content-center mb-0 c-bg-primary text-white py-3 position-relative">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Contact Us</li>
+                            <li class="breadcrumb-item active">404</li>
                         </ol>
                     </div>
                 </div>
@@ -118,116 +54,27 @@
         </section>
         <!-- End Breadcrumb -->
         
-        <!-- Contact -->
-        <section>
+        <!-- Error 404 -->
+        <section class="image-bg error-right">
+            <div class="right-block col-12 col-lg-5 position-absolute  mb-5 mb-lg-0 px-0">
+                <div class="background-image-maker bg-transparent"></div>
+                <div class="holder-image">
+                    <img src="dist/images/car4.png" alt="" class="img-fluid">
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-7 pb-3">
-                        <h3>Get In Touch With us</h3>
-                        <p>Here you can Find the Right car for you</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-3 mb-4 mb-lg-0">
-                        <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-12 mb-3">
-                                <div class="media">
-                                    <div class="d-flex mr-3">
-                                        <span class="lnr lnr-map h2"></span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="c-primary mb-2">HQ Office Address</h5>
-                                        <p>SoldWheel, at Panval, Ratnagiri, Maharashtra, India. 415619</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-12 mb-3">
-                                <div class="media">
-                                    <div class="d-flex mr-3">
-                                        <span class="lnr lnr-phone-handset h2"></span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="c-primary mb-2">Toll-Free No.</h5>
-                                        <p><a href="tel:+91 99707 40063" class="c-light"> +91 99707 40063</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-12 col-sm-6 col-lg-12">
-                               <div class="media">
-                                    <div class="d-flex mr-3">
-                                        <span class="lnr lnr-envelope h2"></span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="c-primary mb-2">Email</h5>
-                                        <p><a href="mailto:contact@soldwheel.com" class="c-light"> contact@soldwheel.com</a></p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-7 ml-auto">
-                        <div class="heading pb-3">
-                            <h6 class="mb-0">Send Us Message</h6>
-                            <hr class="c-brd-primary w-25 mx-0">
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="c-dark">Full Name</label>
-                                    <input type="text" class="form-control" placeholder="Sachin Gunjal" />
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="c-dark">Email address</label>
-                                    <input type="text" class="form-control" placeholder="yourmail@demo.com" />
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="c-dark">Mobile Number</label>
-                                    <input type="text" class="form-control" placeholder="+91 85267 25698" />
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <label class="c-dark">Select City</label>
-                                    <select class="form-control">
-                                        <option>New Delhi</option>
-                                        <option value="Bangalore">Bangalore</option>
-                                        <option value="Mumbai">Mumbai</option>
-                                        <option value="Hyderabad">Hyderabad</option>
-                                        <option value="Chennai">Chennai</option>
-                                        <option value="Jaipur">Jaipur</option>
-                                        <option value="Pune">Pune</option>
-                                        <option value="Kolkata">Kolkata</option>
-                                        <option value="Gurgaon">Gurgaon</option>
-                                        <option value="Ahmedabad">Ahmedabad</option>
-                                        <option value="Noida">Noida</option>
-                                        <option value="Chandigarh">Chandigarh</option>
-                                        <option value="Indore">Indore</option>
-                                        <option value="Kochi">Kochi</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-12">
-                                <div class="form-group">
-                                    <label class="c-dark">Message</label>
-                                    <textarea class="form-control" placeholder="Enter your text here..."></textarea>
-                                </div>
-                                <a href="#" class="btn btn-primary text-uppercase btn-lg">Send Message</a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h1 class="error-text c-primary c-line-height-1">404</h1>
+                        <h1 class="c-primary c-line-height-1 display-4  c-font-weight-400">Opps!</h1>
+                        <h4 class="c-primary c-font-weight-300">The Page you were looking for, couldn't be found.</h4>
+                        <p>Can't find what you looking for? Take a moment and do a search below or start from our <a href="#" class="c-primary"><u>Home Page</u></a></p>
+                    </div> 
                 </div>
             </div>
         </section>
-        <!-- End Contact -->
-        
-        <!-- Google Map -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15261.38506084229!2d73.4011898!3d17.0066772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b8d6a9210e45c02!2sSold%20Wheel!5e0!3m2!1sen!2sin!4v1636531249952!5m2!1sen!2sin" width="1600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        <!-- End Google Map -->
-        
+        <!-- End Error 404 -->
+
         <!-- Subscribe-->
         <section class="py-4 c-bg-primary text-white">
             <div class="container">
@@ -235,7 +82,7 @@
                     <div class="col-12 col-lg-8 mb-4 mb-lg-0 align-self-center">
                         <div class="media d-block d-md-flex">
                             <div class="d-md-flex mr-sm-3 mb-3 mb-md-0 align-self-center">
-                                <h5 class="text-white c-font-weight-600 c-open-sans mb-0 c-line-height-1_5">Download SoldWheel <br />Mobile App</h5>
+                                <h5 class="text-white c-font-weight-600 c-open-sans mb-0 c-line-height-1_5">Download CarSpot <br />Mobile App</h5>
                             </div>
                             <div class="media-body align-self-center">
                                 <a href="#"><img src="dist/images/google-play.jpg" alt="" class="img-fluid rounded mr-sm-2 mb-2" /></a>
@@ -266,14 +113,14 @@
                         <div class="media d-block d-sm-flex mb-3">
                             <a href="#" class="d-sm-flex mr-2 c-primary pt-1"><i class="fa fa-twitter"></i></a>
                             <div class="media-body align-self-center tweet">
-                                <p class="mb-0">SoldWheel- the top notch car deling wbsite <a href="#"> #SellYourCar https://t.co/rxJuQV5meq </a></p>
-                                <small>about 20 hours ago</small>
+                                <p class="mb-0">Art Gallery - TZ Portfolio+ Gallery by templaza <a href="#"> #joomla https://t.co/rxJuQV5meq </a></p>
+                                <small>about 17 hours ago</small>
                             </div> 
                         </div>
                         <div class="media d-block d-sm-flex mb-3">
                             <a href="#" class="d-sm-flex mr-2 c-primary pt-1"><i class="fa fa-twitter"></i></a>
                             <div class="media-body align-self-center tweet">
-                                <p class="mb-0">SoldWheel- Ceckout our new Mobile App <a href="#"> #AndroidApp https://t.co/rxJuQV5meq </a></p>
+                                <p class="mb-0">Art Gallery - TZ Portfolio+ Gallery by templaza <a href="#"> #joomla https://t.co/rxJuQV5meq </a></p>
                                 <small>about 17 hours ago</small>
                             </div> 
                         </div>
@@ -316,10 +163,11 @@
                     </div>
                     <div class="col-12 col-lg-3">
                         <h6 class="text-white">Contact Info</h6>
+                        <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim aliquam.</p>
                         <ul class="list-unstyled footer-address mb-0">
-                            <li><a href="#"><i class="fa fa-map-marker pr-2"></i> SoldWheel, At Pnaval, Ratnagiri, 415619, India.</a></li>
-                            <li><a href="tel:+91 99707 40063"><i class="fa fa-phone pr-2"></i> +91 99707 40063</a></li>
-                            <li><a href="mailto:support@soldwheel.com"><i class="fa fa-envelope pr-2"></i> support@soldwheel.com</a></li>
+                            <li><a href="#"><i class="fa fa-map-marker pr-2"></i> 260 5th Ave, New York, NY 10001, USA</a></li>
+                            <li><a href="tel:+1 212-725-5400"><i class="fa fa-phone pr-2"></i> +1 212-725-5400</a></li>
+                            <li><a href="mailto:"><i class="fa fa-envelope pr-2"></i> support@example.com</a></li>
                             <li><a href="#"><i class="fa fa-fax pr-2"></i> Terms & Conditions</a></li>
                         </ul>
                     </div>
@@ -333,7 +181,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-8 text-lg-left text-center mb-3 mb-lg-0">
-                        <span class="copyright">Copyright &copy; 2021-2022 Powered By <a href="www.soldwheel.com">SoldWheel Ltd.</a>  All Rights Reserved. Design and Develop By <a href="darkcode.in">DarkCode Pvt. Ltd.</a></span>
+                        <span class="copyright">Copyright &copy; 2017-2018 Powered By <a href="#">psd2allconversion.</a>  All Rights Reserved.</span>
                     </div>
                     <div class="col-12 col-lg-4 text-lg-right text-center">
                         <ul class="list-inline footer-social mb-0">
@@ -433,9 +281,8 @@
         
         <!-- jQuery -->
         <script src="dist/js/plugins.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb0X-HAAey-LDpdZ26SWV5flKuZb8mr4o"></script>
-        <script src="dist/js/gmaps.min.js"></script>
         <script src="dist/js/common.js"></script>
     </body>
 
+<!-- Mirrored from html.designstream.co.in/carspot/error-404.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Sep 2021 10:53:51 GMT -->
 </html>
